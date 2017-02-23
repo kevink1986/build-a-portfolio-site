@@ -6,107 +6,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Udacity course portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.dotdotdot.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-3 logo">
-                <img src="images/logo-udacity.svg" alt="Udacity logo for my course portfolio">
+        <header>
+            <div class="row">
+                <div class="col-xs-3 logo">
+                    <img src="images/logo-udacity.svg" alt="Udacity logo for my course portfolio">
+                </div>
+                <div class="col-xs-9 text-right text-uppercase">
+                    <h1 class="text-thin title-super">Kevin Kriek</h1>
+                    <h3 class="title-sub">Front-end Ninja</h3>
+                </div>
             </div>
-            <div class="col-xs-9 text-right text-uppercase">
-                <h1 class="text-thin title-super">Kevin Kriek</h1>
-                <h3 class="title-sub">Front-end Ninja</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
+        </header>
+        <section class="main_banner">
+            <div class="row">
+                <div class="col-md-12">
+                    <picture>
+                        <source media="(max-width:767px)" srcset="images/udacity_portfolio_750_500.jpg">
+                        <source media="(max-width:991px)" srcset="images/udacity_portfolio_750_300.jpg">
+                        <img src="images/udacity_portfolio_930_300.jpg" alt="header image" class="img-responsive">
+                    </picture>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <picture>
-                    <source media="(max-width:991px)" srcset="http://www.placehold.it/750X300">
-                    <img src="http://www.placehold.it/930X300" alt="header image" class="img-responsive">
-                </picture>
+        </section>
+        <section class="main_content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-muted">Featured work</h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-muted">Featured</h2>
+            <div class="row">
+                <article>
+                    <div class="col-sm-6 col-md-4 text-center">
+                        <picture>
+                            <source src="" type="">
+                            <source src="" type="">
+                            <img src="images/movie_trailer_website.jpeg" alt="Course 1" class="full-width img-responsive">
+                        </picture>
+                        <h3>Movie Trailer Website</h3>
+                        <p class="description">You will write server-side code to store a list of your favorite movies, including box art imagery and a movie trailer URL. You will then serve this data as a web page allowing visitors to review their movies and watch the trailers.</p>
+                        <a href="https://classroom.udacity.com/nanodegrees/nd004/parts/0041345401/project"> View project</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col-sm-6 col-md-4 text-center">
+                        <picture>
+                            <source src="" type="">
+                            <source src="" type="">
+                            <img src="images/build_a_portfolio.jpeg" alt="Course 1" class=" full-width img-respoonsive">
+                        </picture>
+                        <h3>Build a Portfolio</h3>
+                        <p class="description">You will be provided with a design mockup as a PDF-file and must replicate that design in HTML and CSS.</p>
+                        <a href="https://classroom.udacity.com/nanodegrees/nd004/parts/0041345402/project">View project</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col-sm-6 col-md-4 text-center">
+                        <picture>
+                            <source src="" type="">
+                            <source src="" type="">
+                            <img src="images/multi_user_blog.jpeg" alt="Course 1" class="full-width img-respoonsive">
+                        </picture>
+                        <h3>Multi User Blog</h3>
+                        <p class="description">In this project you will be building a multi user blog(along the lines of Medium) where users can sign in and post blog posts as well as 'Like' and 'Comment' on other posts made on the blog. You will be hosting this blog on Google App Engine and you will also be creating an authentication system for users to be able to register and sign in and then create blog posts!</p>
+                        <a href="https://classroom.udacity.com/nanodegrees/nd004/parts/0041345403/project">View project</a>
+                    </div>
+                </article>
+                <article>
+                <div class="col-sm-6 col-md-4 text-center">
+                    <picture>
+                        <source src="" type="">
+                        <source src="" type="">
+                        <img src="images/tournament_results.jpeg" alt="Course 1" class="full-width img-responsive">
+                    </picture>
+                    <h3>Tournament Results</h3>
+                    <p class="description">You will develop a database schema to store the game matches between players. You will then write code to query this data and determine the winners of various games.</p>
+                    <a href="https://classroom.udacity.com/nanodegrees/nd004/parts/0041345405/project"> View project</a>
+                </div>
+                </article>
+                <article>
+                    <div class="col-sm-6 col-md-4 text-center">
+                        <picture>
+                            <source src="" type="">
+                            <source src="" type="">
+                            <img src="images/item_catalog.jpeg" alt="Course 1" class="full-width img-responsive">
+                        </picture>
+                        <h3>Item Catalog</h3>
+                        <p class="description">You will develop an application that provides a list of items within a variety of categories as well as provide a user registration and authentication system. Registered users will have the ability to post, edit and delete their own items.</p>
+                        <a href="https://classroom.udacity.com/nanodegrees/nd004/parts/0041345408/project">View project</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col-sm-6 col-md-4 text-center">
+                        <picture>
+                            <source src="" type="">
+                            <source src="" type="">
+                            <img src="images/neighborhood_map.jpeg" alt="Course 1" class="full-width img-responsive">
+                        </picture>
+                        <h3>Neighborhood Map</h3>
+                        <p class="description">You will develop a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit. You will then add additional functionality to this application, including: map markers to identify popular locations or places you’d like to visit, a search function to easily discover these locations, and a listview to support simple browsing of all locations. You will then research and implement third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).
+                        </p>
+                        <a href="https://classroom.udacity.com/nanodegrees/nd004/parts/00413454011/project">View project</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col-sm-6 col-md-4 text-center">
+                        <picture>
+                            <source src="" type="">
+                            <source src="" type="">
+                            <img src="images/linux_server_configuration.jpeg" alt="Course 1" class="full-width img-responsive">
+                        </picture>
+                        <h3>Linux Server Configuration</h3>
+                        <p class="description">You will take a baseline installation of a Linux distribution on a virtual machine and prepare it to host your web applications, to include installing updates, securing it from a number of attack vectors and installing/configuring web and database servers.
+                        Note: If you have no experience working in the shell we recommend starting with Linux Command Line Basics. Otherwise, you can jump straight into Configuring Linux Web Servers.
+                        </p>
+                        <a href="https://classroom.udacity.com/nanodegrees/nd004/parts/00413454014/project"> View project</a>
+                    </div>
+                </article>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 text-center">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    <img src="http://www.placehold.it/300x200" alt="Course 1" class="full-width img-responsive">
-                </picture>
-                <h3>Movie Trailer Website</h3>
-                <a href=""> test link</a>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr>
+                </div>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    <img src="http://www.placehold.it/300x200" alt="Course 1" class=" full-width img-respoonsive">
-                </picture>
-                <h3>Build a Portfolio</h3>
-                <a href="">test link</a>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <p>Copyright © 2017 Kevin Kriek</p>
+                </div>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    <img src="http://www.placehold.it/300x200" alt="Course 1" class="full-width img-respoonsive">
-                </picture>
-                <h3>Multi User Blog</h3>
-                <a href="">test link</a>
-            </div>
-            <div class="col-sm-6 col-md-4 text-center">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    <img src="http://www.placehold.it/300x200" alt="Course 1" class="full-width img-responsive">
-                </picture>
-                <h3>Tournament Results</h3>
-                <a href=""> test link</a>
-            </div>
-            <div class="col-sm-6 col-md-4 text-center">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    <img src="http://www.placehold.it/300x200" alt="Course 1" class="full-width img-responsive">
-                </picture>
-                <h3>Item Catalog</h3>
-                <a href="">test link</a>
-            </div>
-            <div class="col-sm-6 col-md-4 text-center">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    <img src="http://www.placehold.it/300x200" alt="Course 1" class="full-width img-responsive">
-                </picture>
-                <h3>Neighborhood Map</h3>
-                <a href="">test link</a>
-            </div>
-            <div class="col-sm-6 col-md-4 text-center">
-                <picture>
-                    <source src="" type="">
-                    <source src="" type="">
-                    <img src="http://www.placehold.it/300x200" alt="Course 1" class="full-width img-responsive">
-                </picture>
-                <h3>Linux Server Configuration</h3>
-                <a href=""> test link</a>
-            </div>
-        </div>
-
+        </footer>
 
     </div>
-
 
 </body>
 </html>
